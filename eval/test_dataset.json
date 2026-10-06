@@ -1,0 +1,254 @@
+[
+  {
+    "id": "IT-01",
+    "query": "How do I connect my iPhone to the campus eduroam WiFi network?",
+    "expected_domains": ["it"],
+    "primary_domain": "it",
+    "category": "Single Domain",
+    "difficulty": "Easy",
+    "notes": "Standard IT wifi connectivity inquiry"
+  },
+  {
+    "id": "IT-02",
+    "query": "I forgot my campus portal password and my Duo 2FA device is locked out.",
+    "expected_domains": ["it"],
+    "primary_domain": "it",
+    "category": "Single Domain",
+    "difficulty": "Easy",
+    "notes": "Identity management & 2FA reset"
+  },
+  {
+    "id": "IT-03",
+    "query": "Where can I download the free campus license for MATLAB and Microsoft Office 365?",
+    "expected_domains": ["it"],
+    "primary_domain": "it",
+    "category": "Single Domain",
+    "difficulty": "Medium",
+    "notes": "Software licensing & distribution"
+  },
+  {
+    "id": "IT-04",
+    "query": "My student printing balance is at zero. How do I add funds to WebPrint?",
+    "expected_domains": ["it"],
+    "primary_domain": "it",
+    "category": "Single Domain",
+    "difficulty": "Medium",
+    "notes": "Campus printing quota"
+  },
+  {
+    "id": "IT-05",
+    "query": "How do I setup GlobalProtect VPN to access research databases from off campus?",
+    "expected_domains": ["it"],
+    "primary_domain": "it",
+    "category": "Single Domain",
+    "difficulty": "Easy",
+    "notes": "VPN & remote access"
+  },
+  {
+    "id": "HR-01",
+    "query": "What is the maximum number of hours an international F-1 student can work on-campus per week?",
+    "expected_domains": ["hr"],
+    "primary_domain": "hr",
+    "category": "Single Domain",
+    "difficulty": "Medium",
+    "notes": "Student employment regulations"
+  },
+  {
+    "id": "HR-02",
+    "query": "When will my teaching assistant TA stipend be deposited into my bank account via direct deposit?",
+    "expected_domains": ["hr"],
+    "primary_domain": "hr",
+    "category": "Single Domain",
+    "difficulty": "Easy",
+    "notes": "TA appointment & payroll"
+  },
+  {
+    "id": "HR-03",
+    "query": "Where do I submit my Form I-9 and SSN documents for my new student job onboarding?",
+    "expected_domains": ["hr"],
+    "primary_domain": "hr",
+    "category": "Single Domain",
+    "difficulty": "Medium",
+    "notes": "HR onboarding & tax verification"
+  },
+  {
+    "id": "HR-04",
+    "query": "How do I log my bi-weekly hours and timesheet in Workday before the supervisor approval deadline?",
+    "expected_domains": ["hr"],
+    "primary_domain": "hr",
+    "category": "Single Domain",
+    "difficulty": "Easy",
+    "notes": "Workday timesheets & payroll"
+  },
+  {
+    "id": "HR-05",
+    "query": "What is the sick leave and bereavement policy for graduate research assistants?",
+    "expected_domains": ["hr"],
+    "primary_domain": "hr",
+    "category": "Single Domain",
+    "difficulty": "Hard",
+    "notes": "Graduate leave & employee benefits"
+  },
+  {
+    "id": "FEE-01",
+    "query": "What is the tuition payment deadline for the upcoming Spring semester?",
+    "expected_domains": ["fees"],
+    "primary_domain": "fees",
+    "category": "Single Domain",
+    "difficulty": "Easy",
+    "notes": "Bursar payment schedule"
+  },
+  {
+    "id": "FEE-02",
+    "query": "How can I enroll in the 3-part installment payment plan to split my semester tuition?",
+    "expected_domains": ["fees"],
+    "primary_domain": "fees",
+    "category": "Single Domain",
+    "difficulty": "Medium",
+    "notes": "Installment payment plan (IPP)"
+  },
+  {
+    "id": "FEE-03",
+    "query": "I have a Bursar financial hold BUR-HOLD on my portal. How do I get it removed?",
+    "expected_domains": ["fees"],
+    "primary_domain": "fees",
+    "category": "Single Domain",
+    "difficulty": "Easy",
+    "notes": "Financial registration hold"
+  },
+  {
+    "id": "FEE-04",
+    "query": "Where can I download my 1098-T tax statement for IRS education credits?",
+    "expected_domains": ["fees"],
+    "primary_domain": "fees",
+    "category": "Single Domain",
+    "difficulty": "Medium",
+    "notes": "Form 1098-T tax document"
+  },
+  {
+    "id": "FEE-05",
+    "query": "If I drop a class in the third week, what percentage of tuition refund am I eligible for?",
+    "expected_domains": ["fees"],
+    "primary_domain": "fees",
+    "category": "Single Domain",
+    "difficulty": "Hard",
+    "notes": "Tuition withdrawal refund schedule"
+  },
+  {
+    "id": "FAC-01",
+    "query": "The faucet in my dorm bathroom is leaking water. How do I file a FixIt maintenance work order?",
+    "expected_domains": ["facilities"],
+    "primary_domain": "facilities",
+    "category": "Single Domain",
+    "difficulty": "Easy",
+    "notes": "Hostel/dorm maintenance"
+  },
+  {
+    "id": "FAC-02",
+    "query": "What are the weekend operating hours for the campus recreation and fitness gym?",
+    "expected_domains": ["facilities"],
+    "primary_domain": "facilities",
+    "category": "Single Domain",
+    "difficulty": "Easy",
+    "notes": "Gym & sports facility hours"
+  },
+  {
+    "id": "FAC-03",
+    "query": "How can I purchase a commuter student parking permit for Lot C and use the EV charging stations?",
+    "expected_domains": ["facilities"],
+    "primary_domain": "facilities",
+    "category": "Single Domain",
+    "difficulty": "Medium",
+    "notes": "Parking permits & EV charging"
+  },
+  {
+    "id": "FAC-04",
+    "query": "How do I book a private study room in the main library for my group project?",
+    "expected_domains": ["facilities"],
+    "primary_domain": "facilities",
+    "category": "Single Domain",
+    "difficulty": "Easy",
+    "notes": "Space & study room reservations"
+  },
+  {
+    "id": "FAC-05",
+    "query": "I lost my blue backpack with my student ID card in the dining hall. Where is Lost and Found?",
+    "expected_domains": ["facilities"],
+    "primary_domain": "facilities",
+    "category": "Single Domain",
+    "difficulty": "Medium",
+    "notes": "Lost and found department"
+  },
+  {
+    "id": "MULTI-01",
+    "query": "How do I pay my semester tuition bill and also fix the broken AC in my residence hall room?",
+    "expected_domains": ["fees", "facilities"],
+    "primary_domain": "fees",
+    "category": "Multi-Domain",
+    "difficulty": "Hard",
+    "notes": "Fees + Facilities composite intent"
+  },
+  {
+    "id": "MULTI-02",
+    "query": "Where can I check my TA stipend direct deposit timesheet and how do I connect to eduroam WiFi on my laptop?",
+    "expected_domains": ["hr", "it"],
+    "primary_domain": "hr",
+    "category": "Multi-Domain",
+    "difficulty": "Hard",
+    "notes": "HR + IT composite intent"
+  },
+  {
+    "id": "MULTI-03",
+    "query": "I need to apply for on-campus student work-study jobs and also buy a resident parking permit for my dorm.",
+    "expected_domains": ["hr", "facilities"],
+    "primary_domain": "hr",
+    "category": "Multi-Domain",
+    "difficulty": "Hard",
+    "notes": "HR + Facilities composite intent"
+  },
+  {
+    "id": "MULTI-04",
+    "query": "Can I use my scholarship financial aid to pay for my campus meal plan and printing quota credits?",
+    "expected_domains": ["fees", "facilities", "it"],
+    "primary_domain": "fees",
+    "category": "Multi-Domain",
+    "difficulty": "Hard",
+    "notes": "Fees + Facilities + IT composite intent"
+  },
+  {
+    "id": "MULTI-05",
+    "query": "My password reset link isn't working and I need to clear my Bursar hold before class registration.",
+    "expected_domains": ["it", "fees"],
+    "primary_domain": "it",
+    "category": "Multi-Domain",
+    "difficulty": "Hard",
+    "notes": "IT + Fees composite intent"
+  },
+  {
+    "id": "OOD-01",
+    "query": "What is the best recipe for making homemade chocolate chip cookies?",
+    "expected_domains": [],
+    "primary_domain": "out_of_domain",
+    "category": "Out of Domain",
+    "difficulty": "Medium",
+    "notes": "General culinary query"
+  },
+  {
+    "id": "OOD-02",
+    "query": "Who won the FIFA World Cup championship in 2022?",
+    "expected_domains": [],
+    "primary_domain": "out_of_domain",
+    "category": "Out of Domain",
+    "difficulty": "Medium",
+    "notes": "Sports trivia outside campus services"
+  },
+  {
+    "id": "OOD-03",
+    "query": "Can you summarize quantum computing principles and qubit superposition?",
+    "expected_domains": [],
+    "primary_domain": "out_of_domain",
+    "category": "Out of Domain",
+    "difficulty": "Medium",
+    "notes": "Academic scientific query"
+  }
+]

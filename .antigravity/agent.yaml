@@ -1,0 +1,157 @@
+# Nidan - Global Workflow Configuration
+# Antigravity Multi-Agent & Intent Routing Specification
+
+version: "2.0"
+agent:
+  name: "Nidan"
+  description: "Nidan - Enterprise multi-domain university assistant for students, faculty, and staff."
+  default_locale: "en-US"
+  version: "1.0.0"
+
+orchestration:
+  routing_strategy: "hybrid_scored_multi_intent"
+  confidence_threshold: 0.35
+  ambiguity_margin: 0.12
+  multi_intent_threshold: 0.28
+  max_routed_skills: 3
+  fallback_domain: "general_inquiry"
+
+domains:
+  it:
+    name: "Information Technology Services"
+    description: "Campus WiFi, VPN, passwords, software licenses, lab workstations, printing quotas, and technical support."
+    skill_file: "domain_skills/it_skill.md"
+    escalation_contact: "helpdesk@campus.edu | +1 (555) 019-4821"
+    sla_hours: 4
+    priority_level: "high"
+    keywords:
+      - wifi
+      - eduroam
+      - vpn
+      - password
+      - reset
+      - sso
+      - canvas
+      - blackboard
+      - portal
+      - software
+      - matlab
+      - office365
+      - license
+      - print
+      - printing
+      - lab
+      - workstation
+      - laptop
+      - malware
+      - network
+
+  hr:
+    name: "Human Resources & Student Employment"
+    description: "Student on-campus jobs, TA/RA appointments, payroll, direct deposit, tax forms, leave policy, and staff benefits."
+    skill_file: "domain_skills/hr_skill.md"
+    escalation_contact: "hr-services@campus.edu | +1 (555) 019-4822"
+    sla_hours: 24
+    priority_level: "medium"
+    keywords:
+      - job
+      - employment
+      - ta
+      - ra
+      - teaching assistant
+      - research assistant
+      - stipend
+      - payroll
+      - paycheck
+      - timesheet
+      - direct deposit
+      - work study
+      - onboarding
+      - i9
+      - ssn
+      - leave
+      - sick leave
+      - benefits
+      - insurance
+      - grievance
+
+  fees:
+    name: "Bursar & Student Financial Services"
+    description: "Tuition billing, payment deadlines, installment plans, scholarships, refunds, late waivers, and 1098-T tax statements."
+    skill_file: "domain_skills/fees_skill.md"
+    escalation_contact: "bursar@campus.edu | +1 (555) 019-4823"
+    sla_hours: 12
+    priority_level: "critical"
+    keywords:
+      - tuition
+      - fee
+      - fees
+      - payment
+      - pay
+      - bursar
+      - invoice
+      - installment
+      - emi
+      - scholarship
+      - financial aid
+      - fafsa
+      - grant
+      - refund
+      - late fee
+      - hold
+      - 1098-t
+      - receipt
+      - due date
+      - wire transfer
+
+  facilities:
+    name: "Campus Facilities & Housing Operations"
+    description: "Dorm/hostel maintenance, room bookings, sports complex/gym, cafeteria, library access, parking permits, and lost & found."
+    skill_file: "domain_skills/facilities_skill.md"
+    escalation_contact: "facilities-ops@campus.edu | +1 (555) 019-4824"
+    sla_hours: 8
+    priority_level: "medium"
+    keywords:
+      - dorm
+      - hostel
+      - room
+      - maintenance
+      - plumbing
+      - electricity
+      - ac
+      - heater
+      - gym
+      - sports
+      - cafeteria
+      - dining
+      - meal plan
+      - library
+      - booking
+      - reservation
+      - parking
+      - permit
+      - ev charging
+      - lost and found
+      - keycard
+
+routing_pipeline:
+  stages:
+    - name: "preprocessing"
+      normalize_case: true
+      strip_punct: true
+      expand_acronyms: true
+    - name: "intent_classification"
+      engine: "hybrid_tfidf_rule_classifier"
+      enable_multi_intent: true
+    - name: "skill_dispatch"
+      load_skill_context: true
+      max_context_tokens: 2048
+    - name: "response_synthesis"
+      include_citations: true
+      include_escalation_path: true
+      include_confidence_metrics: true
+
+guardrails:
+  filter_profanity: true
+  pii_redaction: true
+  log_routing_decisions: true

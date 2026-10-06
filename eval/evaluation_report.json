@@ -1,0 +1,134 @@
+{
+  "summary": {
+    "total_queries": 28,
+    "top1_accuracy": 1.0,
+    "overall_accuracy_percentage": 100.0,
+    "exact_multi_accuracy": 1.0,
+    "subset_multi_accuracy": 1.0,
+    "micro_f1": 1.0,
+    "macro_f1": 1.0,
+    "avg_latency_ms": 0.53
+  },
+  "category_breakdown": {
+    "Single Domain": {
+      "total": 20,
+      "correct": 20
+    },
+    "Multi-Domain": {
+      "total": 5,
+      "correct": 5
+    },
+    "Out of Domain": {
+      "total": 3,
+      "correct": 3
+    }
+  },
+  "category_stats": {
+    "Single Domain": {
+      "total": 20,
+      "correct": 20
+    },
+    "Multi-Domain": {
+      "total": 5,
+      "correct": 5
+    },
+    "Out of Domain": {
+      "total": 3,
+      "correct": 3
+    }
+  },
+  "difficulty_stats": {
+    "Easy": {
+      "total": 10,
+      "correct": 10
+    },
+    "Medium": {
+      "total": 11,
+      "correct": 11
+    },
+    "Hard": {
+      "total": 7,
+      "correct": 7
+    }
+  },
+  "per_domain_metrics": {
+    "it": {
+      "tp": 8,
+      "fp": 0,
+      "fn": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+    },
+    "hr": {
+      "tp": 7,
+      "fp": 0,
+      "fn": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+    },
+    "fees": {
+      "tp": 8,
+      "fp": 0,
+      "fn": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+    },
+    "facilities": {
+      "tp": 8,
+      "fp": 0,
+      "fn": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+    },
+    "out_of_domain": {
+      "tp": 3,
+      "fp": 0,
+      "fn": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+    }
+  },
+  "confusion_matrix": {
+    "it": {
+      "it": 6,
+      "hr": 0,
+      "fees": 0,
+      "facilities": 0,
+      "out_of_domain": 0
+    },
+    "hr": {
+      "it": 0,
+      "hr": 7,
+      "fees": 0,
+      "facilities": 0,
+      "out_of_domain": 0
+    },
+    "fees": {
+      "it": 0,
+      "hr": 0,
+      "fees": 7,
+      "facilities": 0,
+      "out_of_domain": 0
+    },
+    "facilities": {
+      "it": 0,
+      "hr": 0,
+      "fees": 0,
+      "facilities": 5,
+      "out_of_domain": 0
+    },
+    "out_of_domain": {
+      "it": 0,
+      "hr": 0,
+      "fees": 0,
+      "facilities": 0,
+      "out_of_domain": 3
+    }
+  },
+  "errors": []
+}
